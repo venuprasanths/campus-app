@@ -1,8 +1,24 @@
-<h1>Welcome Student</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+</head>
+<body>
+
+<h2>Welcome Student</h2>
 
 <button onclick="logout()">Logout</button>
 
-<div id="data"></div>
+<h3>Your Marks</h3>
+<div id="marks"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
 <script src="app.js"></script>
+
+<script>
+checkUser();
+loadMarks();
+</script>
+
+</body>
+</html>
